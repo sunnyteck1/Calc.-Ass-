@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Multiplication Calculator</h2>
+
+        <label for="result"></label><br/>
+        <input id="result"
+          type="text"
+          placeholder="Result"
+          readonly
+        />
+        <br/>
+        <br/>
+
+        <label for="num1"></label><br/>
+        <input id="num1"
+          type="text"
+          placeholder=" First number"
+          required
+         />
+         <br/>
+         
+        <label for="num2"></label><br/>
+        <input id="num2"
+          type="text"
+          placeholder="Second number"
+          required
+        />
+         <br/>
+         <br/>
+        <button  id="calculateBtn">Calculate</button>
+    </div>
+
+    <script> 
+      document.getElementById("calculateBtn").addEventListener("click", function() {
+       const num1 = document.getElementById("num1").value;
+       const num2 = document.getElementById("num2").value;
+       const resultField = document.getElementById("result");
+       
+        //conditional statement 
+        if (num1 === "" 
+          || num2 === ""
+          || isNaN(num1)
+          || isNaN(num2)
+        ) {
+        alert("Please enter valid numbers in both fields.");
+        resultField.value ="";
+        return;
+        }
+        
+        const result = Number(num1) * Number(num2);
+        resultField.value = result;
+
+      });
+   </script>
+  </body>
+</html>
