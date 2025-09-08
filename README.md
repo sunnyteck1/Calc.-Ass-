@@ -29,4 +29,13 @@ Multiplication Calculator
 ‎
 ‎4. The result will appear in the result box.
 
+
+
+If you leave a field empty or type something that’s not a number, an alert will ask you to enter valid numbers.
+‎
+‎
+‎
+‎
+‎
+
 # Calc.-Ass-
