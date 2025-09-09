@@ -46,8 +46,7 @@ button {
     background-color:#005fa3;
     color: white;
     border: none;
-    border-radius: 12px ;
-    cursor: pointer;
+    border-radius: 12px;
 }
 .button-group{
     display: inline-flex;
@@ -58,3 +57,4 @@ button:hover {
     background-color: #0078d4;
 
 }
+
