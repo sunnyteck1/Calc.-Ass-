@@ -18,7 +18,7 @@ Multiplication Calculator
 
 ‎
 ‎
-‎2. Enter the second number.
+2. Enter the second number.
 
 
 ‎
@@ -32,7 +32,7 @@ Multiplication Calculator
 
 
 
-5. click   X  button to clear the input and result after calculating.
+5. click   X - button to clear the input and result after calculating.
 
 
 
