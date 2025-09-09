@@ -36,6 +36,9 @@
          <br/>
          <br/>
         <button  id="calculateBtn">Calculate</button>
+         <div class="button-group">
+            <button id ="clearBtn">X</button>
+        </div>
     </div>
 
     <script> 
@@ -57,8 +60,13 @@
         
         const result = Number(num1) * Number(num2);
         resultField.value = result;
-
+      });
+         document.getElementById("clearBtn").addEventListener("click", function() {
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+        document.getElementById("result").value = "";
       });
    </script>
   </body>
+
 </html>
